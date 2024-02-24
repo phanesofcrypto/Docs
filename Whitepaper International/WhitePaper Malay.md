@@ -8,11 +8,11 @@
 
 ## Pendahuluan
 
-Morpheus direka untuk menyediakan insentif kepada rangkaian peer-to-peer pertama AI peribadi, yang dikenali sebagai Ejen Pintar. Menyediakan Agen Pintar sumber terbuka untuk pengguna menyambung ke dompet mereka, Dapps & kontrak pintar menjanjikan untuk membuka dunia Web3 untuk semua orang.
+Morpheus direka untuk menyediakan insentif kepada rangkaian peer-to-peer pertama AI peribadi, yang dikenali sebagai Smart Contracts. Menyediakan Smart Contracts sumber terbuka untuk pengguna menyambung ke dompet mereka, DApps & smart contracts menjanjikan untuk membuka dunia Web3 untuk semua orang.
 
-Akhirnya, pengguna biasa boleh bercakap dengan Ejen Pintar mereka dalam bahasa biasa dan memintanya untuk memahami soalan dan mengambil tindakan berdasarkan niat/perjanjian mereka. Detik ini serupa dengan bagaimana enjin carian Google membuka internet awal kepada masyarakat umum melalui antara muka web yang mudah digunakan pada akhir 1990-an.
+Akhirnya, pengguna biasa boleh bercakap dengan Smart Contracts mereka dalam bahasa biasa dan memintanya untuk memahami soalan dan mengambil tindakan berdasarkan niat/kontrak mereka. Detik ini serupa dengan bagaimana enjin carian Google membuka internet awal kepada masyarakat umum melalui antara muka web yang mudah digunakan pada akhir 1990-an.
 
-Untuk menjadikan Ejen Pintar boleh diakses oleh semua orang dan meningkatkan desentralisasi infrastruktur mereka, kami mencadangkan pembangunan rangkaian Morpheus. Rangkaian Morpheus akan memasukkan token pelancaran yang mencukupi (“token MOR”) untuk memberi insentif kepada keempat-empat penyumbang utama rangkaian. Iaitu, komuniti pembina yang mencipta antara muka, pengkod yang menyumbang kepada perisian/ejen Morpheus, penyedia modal yang menambah kecairan dan mereka yang membekalkan pengiraan, penyimpanan dan lebar jalur. Ia telah ditunjukkan dengan baik oleh sejarah Bitcoin dan Ethereum bahawa persaingan bebas & terbuka untuk token digital yang terhad boleh menyediakan infrastruktur berskala untuk blok blok awam dalam jangka masa panjang.
+Untuk menjadikan Smart Contracts boleh diakses oleh semua orang dan meningkatkan desentralisasi infrastruktur mereka, kami mencadangkan pembangunan rangkaian Morpheus. Rangkaian Morpheus akan memasukkan token pelancaran yang mencukupi (“token MOR”) untuk memberi insentif kepada keempat-empat penyumbang utama rangkaian. Iaitu, komuniti pembina yang mencipta antara muka, pengkod yang menyumbang kepada perisian/Smart Contracts Morpheus, penyedia modal yang menambah likuiditas dan mereka yang membekalkan pengiraan, penyimpanan dan lebar jalur. Ia telah ditunjukkan dengan baik oleh sejarah Bitcoin dan Ethereum bahawa persaingan bebas & terbuka untuk token digital yang terhad boleh menyediakan infrastruktur berskala untuk blockchain awam dalam jangka masa panjang.
 
 ![MorpheusNetworkDiagram](https://github.com/MorpheusAIs/Morpheus/blob/main/Asset/WhitePaper%20Graphics/Indonesian/MorpheusNetwork.png)
 

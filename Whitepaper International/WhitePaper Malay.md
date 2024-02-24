@@ -2,7 +2,7 @@
 
 # Morpheus
 ## Rangkaian Untuk Memperkasa Agen Pintar
-###, Ditulis oleh Morpheus, Ditulis oleh
+###, Ditulis oleh Morpheus, Ditulis oleh:
 ### Neo Diterbitkan - 2 September 2023 Pautan ke Butiran Teknikal Yellow Paper: https://github.com/MorpheusAIs/Morpheus/blob/main/!KEYDOCS%20README%20FIRST!/3.YellowPaper.md
 #### Jemahan daripada @jeremyongws
 

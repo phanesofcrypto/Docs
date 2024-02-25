@@ -25,26 +25,29 @@ We must also identify the contract address of the token for which the yield will
 ## Fork Relevant Visualisations and Refactor the Code 
 The blockchain maintains the historical state of all prior transactions, hence, anyone can easily access transactions all the way back to the genesis ETH block. However, navigating through such transactions can be very messy, especially when there are more than 1 million transactions per day.
 
-Dune is a tool that designed for efficient querying of these transactions using high-speed parallel computing. 
+Dune is a tool that is designed for efficient querying of these transactions using high-speed parallelized computing.  It also streamlines the visualization process with built-in tooling. 
 ---- edited until here ----
 
-allows us to efficiently query such transactions through super-fast parallelised computing. It also streamlines the visualisation process with built-in tooling. Here, we will briefly go through each visualisation category and examine how to quickly adjust it to fit a project's needs: 
 
-1) Total TVL in nominal currency and USD
-- The `deposited` CTE tracks all stETH transfers to the Distribution Contract. The `withdrawn` CTE tracks all stETH transfers out of the Distribution Contract. Change the `to` and `from` fields to the project's staking contract and ensure that the `contract_address` field reflects the yield-bearing token utilised. To convert to USD, we utilised another CTE called `prices`.
+In the section below, we will go through each visualization category, focusing on customization strategies to align with specific project requirements.
+
+Here, we will briefly go through each visualisation category and examine how to quickly adjust it to fit a project's needs: 
+
+1) Total TVL in Nominal Currency and USD
+- The `deposited` CTE tracks all stETH transfers to the Distribution Contract, while the `withdrawn` CTE tracks all stETH transfers exiting the Distribution Contract. Modify the `to` and `from` fields to align with the project's staking contract and ensure that the `contract_address` field reflects the yield-bearing token utilised. To convert to USD, we utilise another CTE called `prices`.
 
 2) Unique Depositors
-- Similarly, we track the distinct count of `from` addresses that have transferred stETH into the contract specified. Ensure that the `to` field is populated with staking contract as well as the relevant address for the `contract_address` field. 
+- Similarly, we track the distinct count of `from` addresses that have transferred stETH into the designated contract. Ensure that the `to` field corresponds with the staking contract as well as the relevant address for the `contract_address` field. 
 
 3) Net Flows over time
-- Replace the `to` and `from` values with the staking contract address. Change the `contract_address` to the token to be deposited. If your token does not use 18 decimal places, modify the 1e18 value to match your token's precision.
+- Replace the `to` and `from` values with the staking contract address. Change the `contract_address` to the token to be deposited. If the token does not use 18 decimal places, modify the 1e18 value to match the token's precision.
 
-- Modify Timeframe: In the `days` CTE, update the start date in the CAST('YYYY-MM-DD' AS timestamp) to reflect your analysis period.
+- Modify Timeframe: In the `days` CTE, update the start date in the CAST('YYYY-MM-DD' AS timestamp) to reflect your analysis timeframe.
 
 - Adapt for Different Tokens: To analyze another token, simply change the contract_address in both `deposited` and `withdrawn` CTEs.
 
 4) Total Contract Balance TVL over time
-This code simply uses blocks of code from 3) but includes a window function in the final few lines [OVER()] to maintain a rolling sum across all the days.  
+This code simply uses blocks of code from 3) but includes a window function [OVER()] in the last few lines to calculate a rolling sum across all the days.  
 
 - Update Contract Addresses: Change the `to` and `from` values to your project's contract address for deposits and withdrawals. Replace the `contract_address` with the address of the token you are tracking.
 
@@ -54,7 +57,10 @@ This code simply uses blocks of code from 3) but includes a window function in t
 
 - Adapt for Different Tokens: To analyze a different token, simply alter the `contract_address` in the `deposited` and `withdrawn` CTEs to the new token's contract address.
 
-This approach calculates the cumulative total of stETH (or any specified token) within the contract over time.
+This approach calculates the cumulative total of the token specified in the `contract_address` within the contract over the specified timeframe.
+
+
+----- edited until here ----
 
 5) Largest Depositors and Recent Transactions
 The first query utilises two CTEs and combines them in the final SELECT statement. The first CTE `quantum` selects the depositing addresses in the `from` field and sums across the `value` field for the total stETH deposited. The second CTE again also selects the depositing addresses but instead of summing, it keeps a 'count'. The final SELECT statement joins both CTEs in one table. To modify follow the instructions below: 

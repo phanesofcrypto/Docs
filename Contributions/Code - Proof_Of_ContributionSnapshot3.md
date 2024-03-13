@@ -34,3 +34,4 @@ Please include the "pipe" `|` symbol correctly as seen above so your contributio
 | -------------- | ------------ |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 | 0xb627956e21Ac0599a9db21BB4A841D49a1c4d27D | https://github.com/MorpheusAIs/Docs/pull/67 | 1 | WhitePaper translated to Slovenian |
+| 0x307443432462454443303eB9e9bEE822d10f6506 | https://github.com/MorpheusAIs/Docs/pull/28 | 5 | Created Protection Fund Details for the Chinese community |
